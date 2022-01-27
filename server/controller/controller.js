@@ -8,7 +8,11 @@ exports.create = (req, res) => {
 
     const user = new Userdb({
         name : req.body.name,
-        note : req.body.note
+        note : req.body.note,
+        contact:{
+            phone: req.body.phone,
+            email: req.body.email
+        }
     })
 
     user

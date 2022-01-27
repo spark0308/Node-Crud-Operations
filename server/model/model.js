@@ -8,6 +8,16 @@ var schema = new mongoose.Schema({
     note: {
         type: String,
         required: true
+    },
+    contact: {
+        phone:{
+            type: String,
+            required: true
+        },
+        email:{
+            type: String,
+            required: true
+        }
     }
 })
 
